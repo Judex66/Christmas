@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Christmas tree</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+ <main>
+     <div class="main-flex">
+         <div class="main-start"><p class="help"> 
+               Помогите бабушке нарядить елку</p>
+                  </div>
+         <button class="main-start-but">Начать</button>
+     </div>
+ </main>
+<section class="start-tree">
+<aside class="left">
+    <div class="start-flex">
+        <div class="menu">
+            <div class="sound">
+                <button class="sound2"><img src="documents/assets/sound.png" alt="sound"></button>
+            </div>
+            <div class="ice">
+                <img src="documents/assets/ice.png" alt="ice">
+            </div>
+            <div class="search">
+                <form>
+                  <input class="inp" type="text" placeholder="Поиск" maxlength="20">
+                  <button class="but-each" type="submit"><img src="documents/assets/search.png" alt=""></button>
+                </form>
+        </div>
+        </div>
+        <div class="sort">
+<div class="sort-text">
+Сортировать
+</div>
+<div class="sort-choice">
+    <select>
+        <option>По возрастанию</option>
+        <option>По алфавиту </option>
+        <option>По убыванию</option>
+      </select>
+</div>
+        </div>
+        <div class="kategory">
+<div class="txt">
+    Категории
+</div>
+<div class="check">
+    <input type="checkbox"> 
+    <p class="inp">Все</p>
+</div>
+        </div>
+        <div class="forma">
+            <div class="txt">
+                Форма
+            </div>
+            <div class="form-flex">
+                <div class="form-box">  
+                    <button class="form-but" id="bell">  
+                    <img src="documents/assets/forms/bell.png" alt="">
+                </button>
+                    <p class="forms">Колокол</p>
+                </div>
+                <div class="form-box"> 
+                     <button class="form-but" id="ball">
+                         <img src="documents/assets/forms/ball.png" alt="">
+                     </button>
+                    
+                    <p class="forms">Шар</p>
+                </div>
+                <div class="form-box">  
+                    <button class="form-but" id="pine">
+                        <img src="documents/assets/forms/pine.png" alt="">
+                     </button>
+                    
+                    <p class="forms">Шишка</p>
+                </div>
+                <div class="form-box"> 
+                     <button class="form-but" id="star">
+                         <img src="documents/assets/forms/star.png" alt=""> 
+                </button>
+                    
+                    <p class="forms">Звезда</p>
+                </div>
+                <div class="form-box">
+                    <button class="form-but" id="snowflake"> 
+                    <img src="documents/assets/forms/snowflake.png" alt="">
+                    </button>
+                    <p class="forms">Снежинка</p>
+                </div>
+                <div class="form-box">
+                    <button class="form-but" id="figur"> 
+                        <img src="documents/assets/forms/bird_toy.png" alt="">
+                    </button>
+                    
+                    <p class="forms">Фигурка</p>
+                </div>
+            </div>
+        </div>
+        <div class="number">
+            <div class="txt">
+                Количество экземпляров
+            </div>
+            <div class="ranging">
+                 <input class="range" type="range" name="volume"
+         min="0" max="20">
+         <div class="period">
+             <p>0</p><p>20</p>
+         </div>
+        </div>
+           
+        </div>
+        <div class="number">
+            <div class="txt">
+                Год приобретения
+            </div>
+            <div class="ranging"><input class="range" type="range" name="volume"
+         min="1950" max="2021">
+         <div class="period">
+            <p>1950</p><p>2021</p>
+        </div>
+    </div>
+         
+        </div>
+        <div class="color">
+            <div class="txt">
+                Цвета
+            </div>
+            <div class="color-flex">
+                <button class="but-col"><img src="documents/assets/colors/blue.png" alt=""></button>
+                <button class="but-col"><img src="documents/assets/colors/red.png" alt=""></button>
+                <button class="but-col"><img src="documents/assets/colors/white.png" alt=""></button>
+                <button class="but-col"><img src="documents/assets/colors/green.png" alt=""></button>
+                <button class="but-col"><img src="documents/assets/colors/yellow.png" alt=""></button>
+            </div>
+        </div>
+        <div class="size">
+            <div class="txt">
+                Размер
+            </div>
+            <div class="input-flex">
+                <input type="checkbox"><p class="txt">Большой</p>
+                <input type="checkbox"><p class="txt">Средний</p>
+                <input type="checkbox"><p class="txt">Маленький</p>
+                <input type="checkbox"><p class="txt">Только любимые</p>
+            </div>
+        </div>
+        <div class="return">
+            <button class="ret-all">Сбросить фильтры</button>
+            <button class="ret-filtr">Сбросить настройки</button>
+        </div>
+    </div>
+</aside>
+<aside class="right">
+    <p class="toys">Игрушки</p>
+    <div class="variants">        
+        <template class="temp" id="templp">
+            <div class="card">
+                <p class="name">Большой шар с рисунком</p>
+                <div id="imgcard">
+                    <img class="toy_img" src="documents/assets/toys/1.png" alt="">
+                </div>
+                <div class="card-description">
+                    <p class="count"></p>
+                    <p class="year"></p>
+                    <p class="shape"></p>
+                    <p class="color"></p>
+                    <p class="size"></p>
+                    <p class="favorite"></p>
+                </div>
+            </div>
+        </template>
+    </div>
+</aside>
+</section>
+<script src="documents/js.js"></script>
+<script src="type.ts"></script>
+    </body>
+</html>
